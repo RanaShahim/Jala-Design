@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Jala Design</title>
+</head>
+<body>
+    <section class = "main">
+        <nav class = "nav-bar">
+            <div class="nav-text"><span class = "bold-text">Jala </span>Design.</span></div>
+            <div class="nav-links" id = "nav-links">
+               
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <img class = "fa" id = "open" src="images/menu.png" alt="">
+        </nav>
+        <!--Adding a section here to resolve the stacking order bug while using Z-index-->
+        <section class = "main-text">
+            <h1>Welcome to <span class = "bold-text">Jala Design.</span></h1>
+            <p>Lorem ipsum dolor, sit amet <span class = bold-text>consectetur adipisicing elit.</span> Harum minima culpa odio, est nemo sequi officiis ab <br>quasi optio, beatae possimus quis qui debitis, repudiandae at architecto! Ut, eius assumenda.</p>
+            <a href="#" class = "jala-btn"><span class = "bold-text">GET STARTED</span></a>
+        </section>
+    </section>
+
+    <!--Specialities-->
+
+    <section class = "special">
+           <h1>What do we <span class = "bold-text"> specialise in?</span></h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laudantium quaerat deserunt, repudiandae perspiciatis<br> quidem error tempore, optio sunt inventore tempora modi. Aliquid omnis ad voluptates mollitia voluptatum cumque beatae.</p>
+
+           <div class="sp-row">
+               <div class="sp-col">
+                   <h3>Website Design</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta cum, inventore exercitationem error officia suscipit cumque. Odio enim ut dolorem qui dicta molestiae quod numquam? Corrupti quam in unde?</p>
+               </div>
+               <div class="sp-col">
+                   <h3>Mobile Development</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam corporis consectetur culpa qui officiis aperiam quisquam facilis? Veritatis maxime quasi explicabo. Velit non excepturi accusamus atque optio odio, repellendus aspernatur?</p>
+               </div>
+               <div class="sp-col">
+                   <h3>Digital Marketing</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis amet modi, consequatur inventore necessitatibus quidem velit atque possimus officia maiores sed repellendus mollitia facilis iusto accusantium iure voluptate tempora! Eius.</p>
+               </div>
+           </div>
+    </section>
+
+    <!--Goals Section-->
+
+    <section class = "goals">
+        <div class="sp-row">
+                <div class="goals-col">
+                    <img class = "goals-img" src="images/JD.jpg" alt="">    
+                </div>
+                <div class="goals-col" id = "goals-text">
+                    <h4>We live and breath digital</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facilis ex nesciunt ea veritatis quos ducimus. Cupiditate, perferendis culpa sequi possimus sit magnam voluptatum id ut ipsam, ipsa explicabo nam.</p>
+                    <a href="#" class = "jala-btn"><span class = "bold-text">GET STARTED</span></a>
+                </div>
+         </div>
+        
+
+    </section>
+
+    <section class = "footer">
+        <div class="foo-row">
+            <h5><span class = "bold-text">Jala</span> Design.</h5>
+            <p>&copy; Jala Design. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img class = "sm" src="images/facebook.png" alt=""></a>
+                <a href="#"><img class = "sm" src="images/twitter.png" alt=""></a>
+                <a href="#"><img class = "sm" src="images/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!--JAVASCRIPT FOR RESPONIVE MENU TOGLING-->
+    <script>
+
+            const navLinks = document.querySelector("#nav-links");
+            const showMenu = document.querySelector("#open");
+            
+            showMenu.addEventListener('click', function(){
+                navLinks.classList.toggle('show');
+            })
+
+           
+
+            
+
+    </script>
+</body>
+</html>
